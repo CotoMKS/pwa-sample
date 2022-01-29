@@ -1,0 +1,161 @@
+:root {
+    --fgo-primary: #960f8b;
+    --fgo-secondary: #ff96d7;
+    --fgo-dark: #302829;
+    --fgo-light: #ffd6f8;
+}
+
+main {
+    margin-top: 65px;
+    height: 77.5vh;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    width: 5px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: var(--fgo-dark);
+    border-radius: 12px;
+}
+
+.bg-fgo-primary {
+    background-color: var(--fgo-primary) !important;
+}
+.bg-fgo-secondary {
+    background-color: var(--fgo-secondary) !important;
+}
+.bg-fgo-dark {
+    background-color: var(--fgo-dark) !important;
+}
+.bg-fgo-light {
+    background-color: var(--fgo-light) !important;
+}
+
+footer .navbar a {
+    font-size: 24px;
+}
+
+.profile-container {
+    margin-bottom: 150px;
+}
+
+.profile-container .profile-picture {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 25px;
+    margin-right: 40px;
+    border-radius: 50%;
+    position: relative;
+    border: solid 5px var(--fgo-secondary);
+}
+
+.profile-container .profile-text {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        margin-bottom: 100px;
+    }
+    
+    .profile-container .profile-picture {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 75px;
+        margin-right: 0;
+        border-radius: 50%;
+        position: relative;
+        border: solid 5px var(--fgo-secondary);
+    }
+}
+
+.event-container {
+    list-style-type: none;
+    padding: 0 0.25rem;
+}
+
+.event-container li {
+    background-color: var(--fgo-dark);
+    border-radius: 6px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.event-container li .event-thumbnail {
+    height: 100px;
+    border-radius: 6px 0 0 6px;
+}
+
+.inventory-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.inventory-container .inventory-item {
+    height: 100px;
+    width: 100px;
+    border: solid 5px var(--fgo-secondary);
+    border-radius: 8px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inventory-container .inventory-item:hover {
+    filter: brightness(0.7);
+    transition: 0.2s;
+}
+
+.inventory-container .inventory-item:hover:after {
+    content: 'Info';
+    position: absolute;
+    font-weight: bold;
+    color: var(--fgo-dark);
+}
+
+.shop-container {
+    display: block;
+}
+
+.btn-fgo-primary {
+    background-color: var(--fgo-primary);
+    color: white;
+}
+
+.btn-fgo-primary:hover {
+    background-color: #820e78;
+    color: white;
+}
+
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.profile-info-container .form-control,
+.profile-info-container .form-select {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+    border-bottom: solid 2px var(--fgo-dark);
+    border-radius: 0;
+}
+
+.notification-container {
+    list-style-type: none;
+    padding: 0 1rem;
+}
+
+.notification-container .notification-item {
+    background-color: var(--fgo-dark);
+    color: white;
+    border-radius: 4px;
+    padding: 5px 12px;
+    margin-bottom: 5px;
+}
